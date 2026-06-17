@@ -43,9 +43,9 @@ export default function CinematicImage({
       <motion.div
         className="absolute inset-0"
         style={parallax ? { y, scale } : undefined}
-        initial={reveal ? { clipPath: "inset(100% 0 0 0)" } : false}
-        whileInView={reveal ? { clipPath: "inset(0% 0 0 0)" } : undefined}
-        viewport={{ once: true, amount: 0.25 }}
+        initial={reveal ? { opacity: 0 } : false}
+        whileInView={reveal ? { opacity: 1 } : undefined}
+        viewport={{ once: true, amount: 0.15 }}
         transition={{ duration: 1.3, ease: [0.16, 1, 0.3, 1] }}
       >
         <Image

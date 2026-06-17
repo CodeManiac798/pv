@@ -30,16 +30,16 @@ export default function Navbar() {
       >
         <nav className="mx-auto flex max-w-[1500px] items-center justify-between px-5 sm:px-8">
           {/* Logo */}
-          <a href="#top" className="group flex flex-col leading-none">
+          <a href="#top" className="group flex min-w-0 flex-col leading-none">
             <span
-              className={`font-display text-lg tracking-tight transition-colors duration-500 ${
+              className={`font-display text-base tracking-tight transition-colors duration-500 sm:text-lg ${
                 scrolled ? "text-charcoal" : "text-ivory"
               }`}
             >
               The Picture Villa
             </span>
             <span
-              className={`mt-0.5 text-[0.55rem] uppercase tracking-label transition-colors duration-500 ${
+              className={`mt-0.5 hidden text-[0.55rem] uppercase tracking-label transition-colors duration-500 sm:block ${
                 scrolled ? "text-gold" : "text-champagne/90"
               }`}
             >
@@ -64,10 +64,10 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="flex items-center gap-3">
+          <div className="flex shrink-0 items-center gap-3">
             <a
               href="#visit"
-              className="hidden rounded-full bg-charcoal px-6 py-2.5 text-sm font-medium tracking-wide2 text-ivory transition-transform duration-500 ease-cinema hover:-translate-y-0.5 sm:inline-block"
+              className="hidden rounded-full bg-charcoal px-6 py-2.5 text-sm font-medium tracking-wide2 text-ivory transition-transform duration-500 ease-cinema hover:-translate-y-0.5 md:inline-block"
             >
               Book A Visit
             </a>
